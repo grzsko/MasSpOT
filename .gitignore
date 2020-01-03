@@ -4,6 +4,7 @@
 ### Files ###
 data/*
 reports/*
+sinkhorn/eigen/*
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -109,5 +110,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Jupyter notebook
+*/.ipynb_checkpoints/*
 
 # End of https://www.gitignore.io/api/python
