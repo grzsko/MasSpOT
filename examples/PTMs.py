@@ -22,7 +22,7 @@ from copy import copy
 
 import gc
 
-from optimal_transport_py import quick_distance
+from sinkhorn.optimal_transport_py import quick_distance
 
 
 # In[6]:
@@ -95,6 +95,7 @@ if __name__ == "__main__":
     for sd, md in map(do_work, enumerate(randoms)):
         mass_dists.append(md)
         spec_dists.append(sd)
+        break
 
 
 # In[10]:
