@@ -1,57 +1,18 @@
-Sinkhorn algorithm for spectra comparison
-==============================
+MasSpOT - The Sinkhorn algorithm for spectra comparison
+=======================================================
 
-Comparing MS spectra using Sinkhorn algorithm.
+A tool for comparing MS spectra using Sinkhorn algorithm [1]. Basing application is clustering of MSI pictures.
 
-Project Organization
-------------
+# Installation
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
+1. Obtain masserstein package: https://github.com/mciach/masserstein
+2. Obtain [eigen library](eigen.tuxfamily.org) and build it under MasSpOT/eigen.
+3. Run: python setup.py install.
 
+# Usage
+Examples/Clustering example.ipynb file contains an exemplary usage on MSI picture of [mouse cerebellum](https://www.ebi.ac.uk/metabolights/MTBLS487).
 
---------
+# References
+[1] Chizat, L., Peyré, G., Schmitzer, B., & Vialard, F.-X. (2018). Scaling algorithms for unbalanced optimal transport problems. Mathematics of Computation, 87(314), 2563–2609.
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+[2] Bond NJ, Koulman A, Griffin JL, Hall Z. massPix: an R package for annotation and interpretation of mass spectrometry imaging data for lipidomics. Metabolomics. 2017;13(11) 128.
