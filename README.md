@@ -1,5 +1,5 @@
-MasSpOT - The Sinkhorn algorithm for spectra comparison
-=======================================================
+MasSpOT - Optimal Transport for Mass Spectrometry
+=================================================
 
 A tool for comparing MS spectra using Sinkhorn algorithm [1]. Basing application is clustering of MSI pictures.
 
