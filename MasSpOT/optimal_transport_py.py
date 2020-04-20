@@ -2,7 +2,7 @@ from cffi import FFI
 ffi = FFI()
 ffi.cdef("""double calc_distance_c(double*, double*, int, double*, double*, int,
           double, double, double, double, double);""")
-lib = ffi.dlopen("sinkhorn/optimal_transport.so")
+lib = ffi.dlopen("MasSpOT/optimal_transport.so")
 
 from datetime import datetime
 
