@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 from distutils.core import setup, Extension
 
-module1 = Extension('demo',
+module1 = Extension('MasSpOTCppToPy',
                     sources = ['MasSpOT/optimal_transport.cpp'],
                     include_dirs = ['MasSpOT/eigen'])
 
