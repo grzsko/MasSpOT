@@ -5,7 +5,8 @@ A tool for comparing MS spectra using Sinkhorn algorithm [1]. Basing application
 
 # Installation
 
-1. Obtain masserstein package: https://github.com/mciach/masserstein
+1. Obtain masserstein package: https://github.com/mciach/masserstein and build it in your python
+ env.
 2. Obtain [eigen library](eigen.tuxfamily.org) and build it under MasSpOT/eigen.
 3. Run: python setup.py install.
 
